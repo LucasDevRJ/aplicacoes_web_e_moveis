@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            img {
+                width: 500px;
+                height: 300px;
+                top: 50px;
+                left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="projeto">Atividades:</label>
+        <meter id="projeto" value="7" min="0" max="10"></meter>
+
+        <br>
+
+        <label for="cadastro">Preenchido:</label>
+        <meter id="cadastro" value="6" max="10"></meter>
+
+        <br>
+
+        <svg width="100" heigth="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="gray"></circle>
+        </svg>
+
+        <br>
+
+        <img src="aula-web.webp" alt="">
+        <canvas id="desenho" width="200" height="100" style="border: 1px solid gray;">
+            <script>
+                var area = document.getElementById("desenho");
+                var desenho = area.getContext("2d");
+                desenho.beginPath();
+                desenho.arc(95, 50, 30, .1 * Math.PI, 1.8 * Math.PI);
+                desenho.stroke();
+                desenho.font = "20px Arial";
+                desenho.fillText("WEB", 100, 55);
+            </script>
+        </canvas>
+    </body>
+</html>
