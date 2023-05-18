@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+
+    <style>
+        p {
+            border-radius: 20px;
+            box-shadow: 10px 10px 15px gray;
+            position: absolute;
+            padding: 10px;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 100px;
+        }
+        
+        p:hover {
+            transform: translate(-.5rem, -1rem) rotate(3deg);
+            transform: rotate(360deg);
+            transform: skew(6deg);
+            transition: transform 8s;
+            transition-timing-function: linear;
+            transition: scale(1.5, 1.5);
+        }
+
+        h1:hover {
+            box-shadow: 10px 10px 15px gray;
+            transform: translate(-.1rem, -1rem) rotate(1deg);
+            transition: transform .5s;
+        }
+    </style>
+    
+    <body>
+        <p><span style="color: gold">Atenção:</span>teste de leitura!</p>
+        <br>
+        <h1>Promoção aproveite!!!</h1>
+    </body>
+</html>
