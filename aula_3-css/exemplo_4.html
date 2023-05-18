@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UACompatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+    <div style="width: 400px;">
+        <form>
+            <div class="custom-control customswitch">
+                <input type="checkbox" class="custom-control-input" id="editar">
+                <label class="custom-controllabel" for="editar">Editar</label>
+            </div>
+            <label for="temperatura">Temperatu
+                ra: </label>
+            <input type="range" class="customrange" min="0" max="10" id="tempertura" na me="temperatura">
+        </form>
+    </div>
+    <img class="imgfluid" src="../aula_2-html/aula-web.webp" alt="logotipo">
+    <br>
+    <br>
+    <!-- Modal-->
+    <button type="button" class="btn btnprimary" data-toggle="modal" datatarget="#janela">Atenção </button>
+            <!-- Cria pop up-->
+            <div class="modal" id="janela">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!--Modal Header-->
+                        <div class="modal-header">
+                            <h4 class="modaltitle">Atenção: </h4>
+                            <button type="button" clas s="close" data-dismiss="modal"></button>
+                        </div>
+                        <!-- Modal body-->
+                        <div class="modal-body">
+                            Antes de sair, verifique s
+                            eu backup diário.
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" datadismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
