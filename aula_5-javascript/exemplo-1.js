@@ -1,5 +1,5 @@
 var http = require("http");
-var aquivo = require("fs");
+var arquivo = require("fs");
 
 var nomeArquivo = process.argv[2];
 
@@ -12,7 +12,7 @@ if (nomeArquivo == '' || nomeArquivo == null) {
             resposta.write(data);
             return resposta.end();
         });
-    }).listen(55555);
+    }).listen(5555);
 }
 
 console.log("Servidor Node executando a porta[5555]");
