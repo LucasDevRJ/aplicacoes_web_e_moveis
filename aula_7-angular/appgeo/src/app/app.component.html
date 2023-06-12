@@ -1,0 +1,26 @@
+<div class="h2 bg-success text-white">
+  <h3 class="mb-4 ml-1" style="text-shadow: 2px 2px 4px gray" >
+  <span class="icon">
+  <i class="fas fa-globeamericas"></i>
+  FERRAMENTAS DE
+  DESENVOLVIMENTO
+  WEB
+  </span>
+  Localização
+  </h3>
+  </div>
+  <div class="ml-3">
+  <h1> Latitude: {{ latitude }} <br>
+  Longitude: {{ longitude }} </h1>
+  <div class="btn btn-success textsecondary">
+  <a class="text-white"
+  [href]="map_url"> Onde estou? (Google
+  Maps) </a>
+  </div>
+  <hr>
+  <button class="btn btn-success textwhite" data-toggle="collapse" datatarget="#rastro">Rastreamento</button>
+  <div id="rastro" class="collapse">
+  <h1> Latitude: {{ latitude2 }} <br>
+  Longitude: {{ longitude2 }} </h1>
+  </div>
+  </div> 
